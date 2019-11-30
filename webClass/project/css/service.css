@@ -1,0 +1,57 @@
+#service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-one-program{
+    width: 978px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.service-title{
+    width: 52px;
+    height: 300px;
+    padding-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 微软雅黑;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+    background-image: url("../images/title-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.service-triangle{
+    width: 28px;
+    height: 300px;
+    margin-right: -1px;
+    margin-left: -1px;
+    background-image: url("../images/serviceTriangle.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.service-introduce{
+    width: 402px;
+    height: 300px;
+    padding-top: 67px;
+    font-family: 微软雅黑;
+    color: #333333;
+    font-size: 14px;
+    line-height: 27px;
+    display: flex;
+    justify-content: left;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.service-img{
+    width: 454px;
+    height: 300px;
+}

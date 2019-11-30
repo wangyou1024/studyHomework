@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7c575f7-4167-4fb7-866e-366deb4bcac9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R3Zxsl6I7scFjcxrohEJFXMp6F" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webComprehensive/webComprehensive1/task1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\web\11823020220-王游\webComprehensive\webComprehensive1\task1" />
+      <recent name="E:\web\11823020220-王游" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\web\11823020220-王游\webComprehensive\task3\js" />
+      <recent name="E:\web\11823020220-王游\webComprehensive\task3\images" />
+      <recent name="E:\web\11823020220-王游\experiment" />
+      <recent name="E:\web\11823020220-王游\javascript" />
+      <recent name="E:\web\11823020220-王游\end" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/11823020220-王游/end/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.home.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7c575f7-4167-4fb7-866e-366deb4bcac9" name="Default Changelist" comment="" />
+      <created>1568897989359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568897989359</updated>
+      <workItem from="1568897992058" duration="3922000" />
+      <workItem from="1568939831836" duration="22627000" />
+      <workItem from="1569026070965" duration="8972000" />
+      <workItem from="1569150594638" duration="2595000" />
+      <workItem from="1569404458606" duration="5031000" />
+      <workItem from="1569414011026" duration="1458000" />
+      <workItem from="1569416048480" duration="22000" />
+      <workItem from="1570861332314" duration="2749000" />
+      <workItem from="1570878829848" duration="191000" />
+      <workItem from="1570964454513" duration="2710000" />
+      <workItem from="1571039088839" duration="14850000" />
+      <workItem from="1571100906687" duration="15099000" />
+      <workItem from="1571280500429" duration="567000" />
+      <workItem from="1571281100743" duration="8021000" />
+      <workItem from="1571405663322" duration="14000" />
+      <workItem from="1571475766734" duration="720000" />
+      <workItem from="1571476517142" duration="1734000" />
+      <workItem from="1571569017926" duration="6017000" />
+      <workItem from="1571639633195" duration="8630000" />
+      <workItem from="1571736614438" duration="10378000" />
+      <workItem from="1571797344860" duration="9793000" />
+      <workItem from="1571897716301" duration="11736000" />
+      <workItem from="1571922765219" duration="2540000" />
+      <workItem from="1571963909521" duration="15318000" />
+      <workItem from="1572050287129" duration="4935000" />
+      <workItem from="1572071291043" duration="20394000" />
+      <workItem from="1572160296789" duration="3059000" />
+      <workItem from="1572173242228" duration="2289000" />
+      <workItem from="1572245274236" duration="3986000" />
+      <workItem from="1572330413375" duration="17947000" />
+      <workItem from="1572423642777" duration="9118000" />
+      <workItem from="1572489543792" duration="6774000" />
+      <workItem from="1572661468121" duration="1951000" />
+      <workItem from="1572850321345" duration="6914000" />
+      <workItem from="1572873416238" duration="1023000" />
+      <workItem from="1572944008389" duration="879000" />
+      <workItem from="1573383497672" duration="1557000" />
+      <workItem from="1573551367764" duration="1462000" />
+      <workItem from="1573652672664" duration="736000" />
+      <workItem from="1573692781593" duration="1883000" />
+      <workItem from="1573988496286" duration="2132000" />
+      <workItem from="1574666498241" duration="2601000" />
+      <workItem from="1574671180546" duration="379000" />
+      <workItem from="1574671625277" duration="142000" />
+      <workItem from="1574683283916" duration="6710000" />
+      <workItem from="1574766287592" duration="4784000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

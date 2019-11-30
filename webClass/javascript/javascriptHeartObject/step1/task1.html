@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现电子邮件验证函数</title>
+    <script>
+        function chkEmail(email) {
+            return email != "" && email.indexOf("@") > 0
+            && email.indexOf("@") == email.lastIndexOf("@")
+            && email.indexOf(".") > email.indexOf("@") + 1
+            && email.lastIndexOf(".") != length -1;
+        }
+        var myemail = "myOEAC@21cn.com";
+        document.write(chkEmail(myemail));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

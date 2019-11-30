@@ -1,0 +1,125 @@
+#product-content{
+    width: 979px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#product-title{
+    width: 979px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-line-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product-main-title{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    padding: 11px 11px 5px 11px;
+    font-weight: bold;
+    cursor: default;
+}
+.product-main-title .triangle{
+    width: 18px;
+    height: 11px;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background-image: url("../images/triangle.png");
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+}
+#product-kinds{
+    width: 968px;
+    height: 40px;
+    padding-left: 9px;
+    margin-top: 6px;
+    border: 1px solid #0d90fe;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.kind-char{
+    color: #333333;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    padding: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+.kind-char:hover{
+    color: #ee7023;
+}
+
+#product-main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-line-programs{
+    width: 979px;
+    height: 274px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+
+.product-one-program{
+    width: 280px;
+    height: 224px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: width 1s,left 1s;
+    position: absolute;
+}
+.product-one-program:hover{
+    left: 0 !important;
+    width: 979px !important;
+    z-index: 5;
+}
+.product-one-program .product-one-introduce{
+    width: 699px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.product-introduce-title{
+    padding:0px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9f440d;
+}
+.product-introduce-content{
+    width: 647px;
+    text-indent: 27px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    justify-content: left;
+    font-size: 13px;
+    color: #333333;
+    line-height: 25px;
+}

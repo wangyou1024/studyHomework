@@ -1,0 +1,136 @@
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*标题*/
+.small-title {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #d2d2d2;
+    background: #f3f3f3;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 10px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+/*内容*/
+.content {
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+/*某个内容*/
+.one-program {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*某一内容的标题*/
+.one-program-title {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+/*必填*/
+.must {
+    color: red;
+    margin: 5px;
+    width: 10px;
+    font-size: 15px;
+}
+
+/*标题名*/
+.name {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+/*帮助？*/
+.one-program-title img {
+    margin: 7px 1px;
+}
+
+/*某一内容的内容模块*/
+.one-program-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*内容模块内的具体内容*/
+.one-program-content .one-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*输入框样式*/
+input {
+    padding-left: 5px;
+    border: 2px solid #cecece;
+    height: 25px;
+    color: #999999;
+}
+
+/*按钮样式*/
+button {
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 4px 9px;
+    border-radius: 3px;
+    border: 2px solid #d2d2d2;
+    background: #f2f2f2;
+}
+
+/*基本文本样式*/
+.base {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/*浅色提示*/
+.tip {
+    font-size: 14px;
+    color: #949494;
+    margin: 5px
+}
+
+/*蓝色提示*/
+.tip-blue {
+    font-size: 14px;
+    color: blue;
+    margin: 5px
+}
+
+/*复选框内容样式*/
+.checkbox-content {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+/*加宽复选框的间隔*/
+.checkbox-content-more-space {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 40px;
+    margin-top: 5px;
+}

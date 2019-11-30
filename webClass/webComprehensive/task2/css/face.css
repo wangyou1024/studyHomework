@@ -1,0 +1,195 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+#wrap {
+    width: 100%;
+    background: #f0ece9;
+}
+
+/*页面标题*/
+#my-title {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+
+/* 表格顶部左横线 */
+#line1 {
+    width: 30%;
+    height: 5px;
+    margin-top: 23px;
+    margin-left: 50px;
+    background-color: #c3a080;
+    border: 0;
+    padding: 0;
+    float: left;
+    clear: left;
+
+}
+
+/* 表格顶部右横线 */
+#line2 {
+    width: 30%;
+    height: 5px;
+    margin-top: 23px;
+    margin-right: 50px;
+    background-color: #c3a080;
+    border: 0;
+    padding: 0;
+    float: right;
+    clear: right;
+}
+
+/*标题内容*/
+#my-title-content {
+    width: 30%;
+    padding-top: 5px;
+    font-size: 25px;
+    color: #999999;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    clear: right;
+}
+
+/*删除与增加按钮*/
+#add-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+/*统一按钮样式*/
+.my-button {
+    width: 95px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 10px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+
+/* 表格 */
+#studentTable {
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+#table-content {
+    width: 94%;
+    text-align: center;
+}
+
+/* 表格每行的高度 */
+table tr {
+    height: 40px;
+}
+
+table tr:hover {
+    background: #5cb85c;
+}
+
+#page {
+    width: 97.5%;
+    height: 170px;
+}
+
+/*页码信息*/
+#pages-information {
+    padding-top: 20px;
+    padding-left: 3%;
+    float: left;
+}
+
+/*上下页按钮*/
+#next-last {
+    float: right;
+}
+
+/*弹窗背景*/
+#gray-bg {
+    opacity: 0.5;
+    background: #626262;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*弹窗*/
+#model {
+    position: absolute;
+    top: 16%;
+    left: 32.5%;
+    width: 35%;
+    height: 60%;
+    display: none;
+    background: white;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 20px #333333;
+    -webkit-box-shadow: 0px 0px 20px #333333;
+    box-shadow: 0px 0px 20px #333333;
+}
+
+#model-title {
+    width: 96%;
+    height: 7.5%;
+    padding-top: 1.5%;
+    padding-left: 4%;
+    border-radius: 5px 5px 0px 0px;
+    background: #555555;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    text-align: left;
+}
+
+#model-content {
+    width: 100%;
+    height: 71%;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*弹窗的一行内容*/
+.model-one {
+    height: 7%;
+    margin: 1.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.model-one-name {
+    width: 30%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.model-one-input {
+    width: 35%;
+    border: #aeaeae 1px solid;
+    text-align: left;
+}
+
+#model-foot {
+    width: 95%;
+    border-top: #aeaeae 1px solid;
+    text-align: right;
+    padding-right: 5%;
+}

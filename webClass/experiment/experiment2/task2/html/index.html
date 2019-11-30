@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验二第二题</title>
+    <link rel="stylesheet" href="../css/face.css">
+    <script charset="utf-8" src="../kindeditor/kindeditor-all-min.js"></script>
+    <script charset="utf-8" src="../kindeditor/lang/zh-CN.js"></script>
+    <script>
+        KindEditor.ready(function (K) {
+            window.editor = K.create('textarea[id="editor_id"]', {
+                allowFileManager: true,
+                //设置编辑器为简单模式
+                items: [
+                    'fontname', 'fontsize', 'bold', 'italic', 'underline', 'hilitecolor', "|",
+                    'justifyleft', 'justifycenter', 'subscript', 'superscript',
+                    '|', 'image', 'multiimage', 'emoticons', '|', 'preview', '|'
+                ],
+            });
+        });
+    </script>
+<!--    <script src="../js/play.js"></script>-->
+</head>
+<body>
+<div id="wrap">
+    <!--    模块一-->
+    <div class="small-title">产品基本信息</div>
+    <div class="content">
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">产品名称</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <input type="text" placeholder="如： PU女士手提包（CK12002）" style="width: 320px">
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="name">产品型号</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <input type="text" style="width: 210px">
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">产品图片</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <span class="one-content">
+                    <input type="radio" name="upload" checked="checked"><div class="base" style="margin-right: 15px">上传单张图片</div>
+                    <input type="radio" name="upload"><div class="base" style="margin-right: 15px">上传多张图片</div>
+                    <p class="tip">您已提交10个多图产品，还可以提交0个</p>
+                </span>
+                <span class="one-content">
+                    <button type="button">本地上传</button>
+                    <button type="button">从图片库选取</button>
+                </span>
+                <span class="one-content">
+                    <p class="tip">-最多添加10个多图产品，每个多图产品最多展示6张图片。<br/>-jpg或jpeg格式;不超过300k</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">关键词</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="text" style="width: 210px">
+                    <div class="tip-blue">关键词建议</div>
+                </div>
+                <div class="one-content">
+                    <div class="tip" style="font-size: 30px;font-weight: 700;padding: 0;margin-top: 0">+</div>
+                    <div class="tip-blue" style="margin-top: 13px">添加更多关键词</div>
+                </div>
+                <div class="one-content">
+                    <div class="tip">-请在每个文本框中输入一个用于描述您的产品的关键词，并控制在48个字符以内</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">产品类别</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <button type="button" style="margin-top: 0">选择目录</button>
+                    <div class="tip">找不到想要的目录？</div>
+                    <div class="tip-blue">点这里</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="name">产品分组</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <select style="background: #FFFFFF;border: 2px solid #d2d2d2;width: 180px;height: 30px;color: gray">
+                        <option>请选择产品组</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program" style="margin-bottom: 30px">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">产品描述</div>
+                <img src="../images/问号.png" height="15" width="15"/>
+            </div>
+            <div class="one-program-content">
+                <span class="one-content">
+                    <input type="radio" name="text" checked="checked" onclick="changeText()"><div class="base"
+                                                                                                  style="margin-right: 15px">富文本</div>
+                    <input type="radio" name="text" onclick="changeText()"><div class="base" style="margin-right: 15px">纯文本</div>
+                    <p class="tip">您已提交23个富文本产品，还可以提交97。</p>
+                    <div style="width:25%;"></div>
+                    <div class="tip-blue">编辑</div>
+                    <select style="border: 0px">
+                        <option></option>
+                    </select>
+                </span>
+                <span class="one-content" style="margin-top: 13px;margin-bottom: 0px">
+                    <textarea id="editor_id" name="content" style="width:700px;height:300px;">
+                    </textarea>
+                    <textarea id="just-text" style="width: 700px;height: 300px;display: none"></textarea>
+                </span>
+                <span class="one-content" style="margin-top:5px">
+                    <p class="tip">-最多100个产品可使用富文本模式编辑，每个产品最多可以在描述里插入3张图片；jpg或jpeg格式；不超过300k。<br/>
+                    -文本内容控制在60-4000个字符内。</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--    模块二-->
+    <div class="small-title">
+        产品贸易
+        <img src="../images/问号.png" height="15" width="15" style="margin-top: 5px;margin-right: 20px;margin-left: 2px"/>
+        <div class="tip" style="margin-top: 3px;font-weight: 300">详细填写您的报价，让其更易被买主关注。</div>
+        <div style="width: 70%"></div>
+        <input type="checkbox" style="margin-top: 1px">
+        <div style="font-size: 13px;margin-top: 3px;font-weight: 300">可洽淡</div>
+    </div>
+    <div class="content">
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">最小起订单</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="text" style="width: 125px;height: 25px;margin-right: 7px">
+                    <select style="background: #FFFFFF;border: 2px solid #d2d2d2;width: 125px;height: 30px;color: gray;margin-right: 20px">
+                        <option>个</option>
+                    </select>
+                    <div class="must">✶</div>
+                    <div class="name">FOB价格（UBD）</div>
+                    <input type="text" style="width: 125px;height: 25px;margin-right: 7px">
+                    <select style="background: #FFFFFF;border: 2px solid #d2d2d2;width: 125px;height: 30px;color: gray">
+                        <option>个</option>
+                    </select>
+                </div>
+                <div class="one-content">
+                    <div class="tip" style="font-size: 30px;font-weight: 700;padding: 0;margin-top: 0">+</div>
+                    <div class="tip-blue" style="margin-top: 13px">添加价格区间</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="name">港口</div>
+            </div>
+            <div class="one-program-content">
+                <input type="text" style="width: 400px">
+            </div>
+        </div>
+
+        <div class="one-program" style="margin-bottom: 20px;">
+            <div class="one-program-title">
+                <div class="must">✶</div>
+                <div class="name">支付方式</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="checkbox">
+                    <div class="checkbox-content">L/C</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">T/T</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">D/P</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">Paypal</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">Memey Gram</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">Western Union</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content">Other</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--模块三-->
+    <div class="small-title">展示字段自定义
+        <img src="../images/问号.png" height="15" width="15" style="margin-top: 5px;margin-right: 20px;margin-left: 2px"/>
+        <div class="tip" style="margin-top: 3px;font-weight: 300">可以从产品属性、自定义属性、交易条件中选择2个自定义信息用于展示厅产品介绍页面的优先展示。</div>
+    </div>
+
+    <div class="content">
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="name">交易条件</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="checkbox" checked="checked">
+                    <div class="checkbox-content-more-space">港口</div>
+                    <input type="checkbox" checked="checked">
+                    <div class="checkbox-content-more-space">支付方式</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program">
+
+            <div class="one-program-title">
+                <div class="name">产品属性</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">外观</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">应用</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">成分</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">目标市场</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-program">
+            <div class="one-program-title">
+                <div class="name">自定义属性</div>
+            </div>
+            <div class="one-program-content">
+                <div class="one-content">
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">FOB</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">CFR</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">CIF</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">DAT</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">FAS</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">DDP</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">DAP</div>
+                    <input type="checkbox">
+                    <div class="checkbox-content-more-space">FOB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

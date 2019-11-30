@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用闭包来实现在在按钮触发点击事件时改变灯泡的状态</title>
+    <script>
+        let mySwitch = false;
+        function change() {
+            mySwitch = ! mySwitch;
+            return mySwitch;
+        }
+        // 闭包
+        function tog() {
+            return change();
+        }
+        function pressSwitch() {
+            alert(tog() + " ");
+        }
+
+    </script>
+</head>
+<body>
+<input type="button" value="开关" onclick="pressSwitch()">
+</body>
+</html>

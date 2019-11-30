@@ -1,0 +1,21 @@
+#wrap{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+#rectangle{
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    animation-name: myKeyFrames;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes myKeyFrames {
+0%    {background: red;left:0%;top: 0%}
+25%   {background: greenyellow;left: 90%;top: 0%;}
+50%   {background: yellow;left: 90%;top: 600px}
+75%   {background: cornflowerblue;left: 0%;top: 600px}
+100%  {background: red;left: 0%;top: 0px;}
+}

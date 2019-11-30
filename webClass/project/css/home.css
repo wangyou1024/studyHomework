@@ -1,0 +1,114 @@
+/*首页内容样式*/
+#home-content{
+    width: 975px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*内容标题*/
+#content-title{
+    height: 90px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #702d13;
+}
+
+/*横线*/
+.line{
+    width: 428px;
+    height: 2px;
+    background: #702d13;
+}
+
+/*圆点*/
+.my-square{
+    width: 6px;
+    height: 6px;
+    background: #702d13;
+    border-radius: 3px;
+}
+
+/*主要内容*/
+#home-main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/*一行内容*/
+.home-line-programs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*一个项目*/
+.home-one-program{
+    width: 281px;
+    height:370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*项目标题*/
+.home-one-program .home-program-title{
+    width: max-content;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 25px;
+    color:#ed6d00;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ed6d00;
+    position: relative;
+    cursor: default;
+}
+
+.home-program-title .my-square1{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ed6d00;
+    border-left: 3px #f7f6f4 solid;
+    border-right: 3px #f7f6f4 solid;
+    position: absolute;
+    top: 90%;
+    left: 43%;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+}
+.home-program-title:hover{
+    color: #66CE95;
+    border-bottom: 1px solid #66CE95;
+}
+
+.home-program-title:hover .my-square1{
+    background-color: #66CE95;
+}
+
+/*项目介绍*/
+.home-one-program .home-program-introduce{
+    font-size: 13px;
+    font-family: 微软雅黑;
+    color: #333333;
+    text-indent: 27px;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home-one-program:hover {
+    background: #ffffff;
+}
+
+.home-one-program:hover .home-program-title .my-square1{
+    border-left: 3px #ffffff solid;
+    border-right: 3px #ffffff solid;
+}

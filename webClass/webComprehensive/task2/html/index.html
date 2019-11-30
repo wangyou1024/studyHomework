@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web小综合作业第二题</title>
+    <link rel="stylesheet" href="../css/face.css">
+</head>
+<body>
+<div id="wrap">
+    <!--    标题-->
+    <div id="my-title">
+        <div id="line1"></div>
+        <div id="my-title-content">学生信息管理系统</div>
+        <div id="line2"></div>
+    </div>
+    <!--    操作按钮-->
+    <div id="add-delete">
+        <button class="my-button" style="background: #5cb85c;margin-left: 3%" onclick="add()">新增</button>
+        <button class="my-button" style="background: #d9534f" onclick="deleteStudent()">删除</button>
+    </div>
+    <!--    表格-->
+    <div id="studentTable">
+        <table id="table-content">
+            <tr style="background:#dadee1;height:40px">
+                <td><input type="checkbox" id="main-checkbox" onclick="checkAll()"></td>
+                <td>序号</td>
+                <td>学号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>学院</td>
+                <td>专业</td>
+                <td>年级</td>
+                <td>班级</td>
+                <td>年龄</td>
+                <td>操作</td>
+            </tr>
+        </table>
+    </div>
+    <!--    展示页面信息-->
+    <div id="page">
+        <div id="pages-information">
+            第<span id="nowPage"></span>页, 共<span id="allPage"></span>条, (本页显示<span id="current-num"></span>条)
+        </div>
+        <div id="next-last">
+            <button class="my-button" style="background: #5cb85c" onclick="render(1)">上一页</button>
+            <button class="my-button" style="background: #d9534f;" onclick="render(2)">下一页</button>
+        </div>
+    </div>
+</div>
+<!--弹窗-->
+<div id="gray-bg"></div>
+<div id="model">
+    <!--    弹窗标题-->
+    <div id="model-title">学生信息</div>
+    <!--    弹窗内容-->
+    <div id="model-content">
+        <div class="model-one">
+            <div class="model-one-name">学号</div>
+            <input type="text" class="model-one-input" id="number-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">姓名</div>
+            <input type="text" class="model-one-input" id="name-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">性别</div>
+            <input type="text" class="model-one-input" id="sex-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">学院</div>
+            <input type="text" class="model-one-input" id="college-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">专业</div>
+            <input type="text" class="model-one-input" id="major-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">年级</div>
+            <input type="text" class="model-one-input" id="grade-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">班级</div>
+            <input type="text" class="model-one-input" id="class-input">
+        </div>
+        <div class="model-one">
+            <div class="model-one-name">年龄</div>
+            <input type="text" class="model-one-input" id="age-input">
+        </div>
+    </div>
+    <!--    弹窗底部-->
+    <div id="model-foot">
+        <button class="my-button" style="background: #5cb85c" id="decided" onclick="ensure()">确定</button>
+        <button class="my-button" style="background: #FFFFFF;color: black;border: 1px solid black"
+                onclick="cancelModel()">取消
+        </button>
+    </div>
+</div>
+
+<script src="../js/play.js"></script>
+</body>
+</html>

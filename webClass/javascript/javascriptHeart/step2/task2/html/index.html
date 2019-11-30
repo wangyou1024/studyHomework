@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 核心编程实验程序编写2</title>
+</head>
+<body>
+<span type="text" id="clock" size="35"></span>
+<script language=javascript>
+    var int = self.setInterval("clock()", 50)
+
+    function clock() {
+        const t = new Date();
+        document.getElementById("clock").innerText = t;
+    }
+</script>
+<button onclick="int=window.clearInterval(int)">Stop interval</button>
+</body>
+</html>

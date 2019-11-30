@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基础编程实验第二阶段第一题</title>
+</head>
+<body>
+<script>
+    document.write("<p>");
+    let n = 5;
+    for (let i = 1; i <= n; i++){
+        for (let k = 1; k <= (n-i); k++){
+            document.write("<div style='width:9px;height: 9px;float: left'></div>");
+        }
+        for (let j = 1; j <= i; j++){
+            document.write("<div style='width:9px;height:9px;float:left'>*</div>");
+        }
+        for (let j = 1; j < i; j++){
+            document.write("<div style='width:9px;height:9px;float:left'>*</div>");
+        }
+        document.write("</br>")
+    }
+    document.write("</p>");
+</script>
+</body>
+</html>

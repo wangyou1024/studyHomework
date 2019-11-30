@@ -1,0 +1,134 @@
+#market-content{
+    width: 975px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#market-main-title{
+    width: 975px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    color: #0d90fe;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#real-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #333333;
+}
+
+#right-content{
+    width: 440px;
+    height: 1350px;
+    padding-right: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-title{
+    width: 440px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: #333333;
+}
+.right-introduce{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333333;
+    text-align: end;
+}
+#left-content{
+    width: 440px;
+    height: 1170px;
+    padding-top:190px;;
+    padding-left: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-title{
+    width: 440px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: #333333;
+}
+.left-introduce{
+    width: 440px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333333;
+}
+
+#img-contain{
+    position: relative;
+}
+
+#img-information{
+    width: 78px;
+    height: 50px;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 25px;
+    background: #FFFFFF;
+    color: #000000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 362px;
+    top: 260px;;
+}
+
+#market-slide{
+    width: 1020px;
+    height: 659px;
+    padding-right: 12px;
+    margin-left: 10px;
+    position: fixed;
+    background-image: url("../images/black-bg.png");
+    top: 50px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+
+#cancel-slide{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 25px;
+    opacity: 0;
+    left: 982px;
+    top: 0px;
+}
+
+

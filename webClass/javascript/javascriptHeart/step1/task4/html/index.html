@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡控制标签页的显示或隐藏</title>
+    <style type="text/css">
+        *{
+            font-family: "微软雅黑";
+            font-size: 14px;
+        }
+        a img{
+            border:none;
+        }
+        #controlSlide{
+            width: 360px;
+            height: 29px;
+            color: #666;
+            margin: 0;
+            padding: 0;
+            background-color: #5899ce;
+        }
+        #controlSlide li{
+            float:left;
+            width: 45px;
+            height: 24px;
+            background-color: #5899ce;
+            text-align: center;
+            padding-bottom: 3px;
+        }
+        #controlSlide li a{
+            text-decoration: none;
+            color: #003276;
+            cursor: pointer;
+        }
+        #controlSlide li.current a{
+            color:white;
+        }
+        .newImg{
+            width: 360px;
+            height: 220px;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function setCurrentTab(index) {
+            for (var i=1; i <= 8; i++){
+                if(i == index){
+                    document.getElementById("slide_" + i).className = "current";
+                    document.getElementById("tab_"+i).style.display = "block";
+                }
+                else{
+                    document.getElementById("slide_"+i).className="";
+                    document.getElementById("tab_"+i).style.display="none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <ul id="controlSlide">
+            <li id="slide_1" onmouseover="setCurrentTab(1);" class="current">
+                <a href="#" target="_blank">资讯</a>
+            </li>
+            <li id="slide_2" onmouseover="setCurrentTab(2);" class="current">
+                <a href="#" target="_blank">娱乐</a>
+            </li>
+            <li id="slide_3" onmouseover="setCurrentTab(3);" class="current">
+                <a href="#" target="_blank">体育</a>
+            </li>
+            <li id="slide_4" onmouseover="setCurrentTab(4);" class="current">
+                <a href="#" target="_blank">汽车</a>
+            </li>
+            <li id="slide_5" onmouseover="setCurrentTab(5);" class="current">
+                <a href="#" target="_blank">时尚</a>
+            </li>
+            <li id="slide_6" onmouseover="setCurrentTab(6);" class="current">
+                <a href="#" target="_blank">军事</a>
+            </li>
+            <li id="slide_7" onmouseover="setCurrentTab(7);" class="current">
+                <a href="#" target="_blank">房产</a>
+            </li>
+            <li id="slide_8" onmouseover="setCurrentTab(8);" class="current">
+                <a href="#" target="_blank">游戏</a>
+            </li>
+        </ul>
+        <div id="divTabList">
+            <div class="divTab" id="tab_1">
+                <a href="#"><img class="newImg" src="../images/1.jpg" alt=""/></a>
+                <h3>法国巴黎：121名女性“躺尸”抗议</h3>
+            </div>
+            <div class="divTab" id="tab_2" style="display: none">
+                <a href="#"><img class="newImg" src="../images/2.jpg" alt=""/></a>
+                <h3>T-ara原成员韩雅凛与企业家男友结婚 有孕在身依旧苗条</h3>
+            </div>
+            <div class="divTab" id="tab_3" style="display: none">
+                <a href="#"><img class="newImg" src="../images/3.jpg" alt=""/></a>
+                <h3>世界杯五冠王！刘诗雯成国乒女队第一人</h3>
+            </div>
+            <div class="divTab" id="tab_4" style="display: none">
+                <a href="#"><img class="newImg" src="../images/4.jpg" alt=""/></a>
+                <h3>10月新规：酒后开车进小区不属于酒驾？</h3>
+            </div>
+            <div class="divTab" id="tab_5" style="display: none">
+                <a href="#"><img class="newImg" src="../images/5.jpg" alt=""/></a>
+                <h3>高贵冷艳 超模绿色亮片人鱼裙妩媚优雅</h3>
+            </div>
+            <div class="divTab" id="tab_6" style="display: none">
+                <a href="#"><img class="newImg" src="../images/6.jpg" alt=""/></a>
+                <h3>这就是未来直升机？美新型武直竞标方案曝光</h3>
+            </div>
+            <div class="divTab" id="tab_7" style="display: none">
+                <a href="#"><img class="newImg" src="../images/7.jpg" alt=""/></a>
+                <h3>高层房子有2层千万不能选 别被售楼小姐忽悠了</h3>
+            </div>
+            <div class="divTab" id="tab_8" style="display: none">
+                <a href="#"><img class="newImg" src="../images/8.jpg" alt=""/></a>
+                <h3>主播曝料2019暴雪嘉年华公布《守望先锋2》</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+.one-program{
+    font-size: 15px;
+    margin: 3px 0px 3px 0px;
+    font-family: 微软雅黑;
+    display: flex;
+    flex-direction: row;
+}
+.one-name{
+    width: 100px;
+    float: left;
+    text-align: right;
+}
+.one-input{
+    height: 20px;
+    width: 200px;
+    float: left;
+}
+.must{
+    font-size: 15px;
+    color: red;
+    margin: 0px 1px 0px 1px;
+}
+.error{
+    background-color: #ff9dbb;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.ok{
+    background-color: #d3ffbb;
+    display: flex;
+    align-items: center;
+}
+.my-image{
+    width: 17px;
+    height: 17px;
+    margin:0px 5px 0px 2px;
+}

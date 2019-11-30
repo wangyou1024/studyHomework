@@ -1,0 +1,54 @@
+/*首页内容样式*/
+#about-content{
+    width: 975px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*内容标题*/
+#about-title{
+    height: 90px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: #702d13;
+    white-space: nowrap;
+}
+
+/*横线*/
+.line{
+    width: 428px;
+    height: 2px;
+    background: #702d13;
+}
+
+/*圆点*/
+.my-square{
+    width: 6px;
+    height: 6px;
+    background: #702d13;
+    border-radius: 3px;
+}
+#about-main-content{
+    padding-bottom: 181px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-introduce{
+    width: 975px;
+    text-indent: 27px;
+    font-size: 15.8px;
+    letter-spacing: 0;
+    line-height: initial;
+    font-family: 微软雅黑;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

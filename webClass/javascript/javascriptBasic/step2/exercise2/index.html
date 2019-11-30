@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基础编程实验第二阶段第二题</title>
+</head>
+<body>
+<script>
+    let n = 100;
+    let flag = 1;
+    for (let i = 0; i <= 100; i++){
+        if(i % 7 != 0){
+            document.write(i);
+            document.write("&nbsp");
+            flag++;
+        }
+        if(flag == 10){
+            document.write("</br>");
+            flag = 0;
+        }
+    }
+</script>
+</body>
+</html>

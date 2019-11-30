@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建一个 Dog 函数对象并使用</title>
+    <script>
+        function DogConstructor(name) {
+            this.name = name;
+            this.respondTo = function (name) {
+                if (this.name === name){
+                    alert("Woof");
+                }
+            }
+        }
+        function test() {
+            var dog = new DogConstructor("smallDog");
+            dog.respondTo("smallDog");
+            dog.respondTo("bagDog");
+        }
+        document.onload = test();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

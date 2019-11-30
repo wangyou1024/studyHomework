@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 核心编程实验程序编写3</title>
+</head>
+<body>
+<form name="myForm" onsubmit="return alertInformation()">
+    <h1> 全员注册</h1>
+    <p>
+        登录名：<input type="text" name="userName"/>
+    </p>
+    <p>
+        密码：<input type="password" name="password"/>
+    </p>
+    <p>
+        确定密码：<input type="password" name="surePassword">
+    </p>
+    <p>
+        性别：<input type="radio" name="sex" value="male">男性<input type="radio" name="sex" value="woman">女性
+    </p>
+    <p>
+        年龄：<select name="age">
+        <option value="18岁">18岁</option>
+        <option value="19岁">19岁</option>
+        <option value="20岁" selected>20岁</option>
+    </select>
+    </p>
+    <input type="submit" value="提交">
+</form>
+<script src="../js/getInformation.js"></script>
+</body>
+</html>

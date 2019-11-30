@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>期末大作业-11823020220-王游</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/market.css">
+</head>
+<body>
+<div id="wrap" onclick="controlCancel()">
+    <div id="head">
+        <a class="head-content-no" style="margin-left: 41px" href="home.html">
+            <div class="nav-char">首页</div>
+        </a>
+        <a class="head-content-no" href="product.html">
+            <div class="nav-char">品牌和产品</div>
+        </a>
+        <a class="head-content-no" href="consociation.html">
+            <div class="nav-char">联营合作</div>
+        </a>
+        <div class="head-content-no" style="opacity: 0">
+            <div class="nav-char" style="width: 80px;height: 1px;"></div>
+        </div>
+        <a class="head-content-no" href="service.html">
+            <div class="nav-char">配套服务</div>
+        </a>
+        <a class="head-content-no" href="market.html" style="background: #ffffff;border-bottom: 2px solid #ffffff;">
+            <div class="nav-char" style="color: #934f0e">门店信息</div>
+        </a>
+        <a class="head-content" href="aboutUs.html">
+            <div class="nav-char">关于我们</div>
+            <div class="down-nav">企业</div>
+            <div class="down-nav">加入我们</div>
+        </a>
+    </div>
+    <div class="contain">
+        <div id="slider-img">
+        </div>
+    </div>
+    <div id="content">
+        <div id="market-slide" onmouseout="out()" onmouseover="enter()">
+            <div id="cancel-slide" onclick="cancel()"></div>
+            <img src="../images/上一张.png" height="180" width="100" onclick="last()"/>
+            <img src="../images/thumb.png" height="423" width="600" id="market-slide-content"/>
+            <img src="../images/下一张.png" height="180" width="100" onclick="next()"/>
+        </div>
+        <div id="market-content">
+
+            <div id="market-main-title">百滋百特</div>
+            <div id="real-content">
+                <div id="right-content">
+                    <div class="right-introduce" style="padding-top: 7px">重庆/龙湖时代天街店—重庆市渝中区龙湖时代天街购物广场C馆L1-55B</div>
+                    <div id="img-contain" onclick="showMarket()">
+                    <img src="../images/thumb.png" height="310" width="440" id="market-img"/>
+                        <div id="img-information">1/5</div>
+                    </div>
+                    <div class="right-title" style="padding-top: 44px">浙江省</div>
+                    <div class="right-introduce">杭州/吴山总店—杭州市延安南路10号（吴山广场）<br>
+                        杭州/文三店——杭州市文三路463号（东方通信大厦对面）<br>
+                        宁波/北仑店——宁波市北仑区新契银泰城（泰山路中河路交叉口）<br>
+                        宁波/天一广场店—宁波市天一广场右营巷43号<br>
+                        湖州/人民广场店—苕溪西路57号（人民广场公交站）<br>
+                        绍兴/诸暨店——暨阳路272号（浣江路中学对面）<br>
+                        绍兴/诸暨店——诸暨市东兴路117号（大润发对面）<br>
+                        嘉兴/嘉兴店——中港城沃尔玛出口处南<br>
+                        义务/义乌店——绣湖西路11号<br>
+                        金华/金华店——金华解放东路450号<br>
+                        金华/金华二店—金华市兰溪街111号</div>
+                    <div class="right-title" style="padding-top: 44px;">广东省</div>
+                    <div class="right-introduce">潮州/潮州店——潮州市环城西路新桥花园1号<br>
+                        潮州/潮州2店—潮州市枫溪瓷兴路路头（怀德市场斜对面）<br>
+                        潮州/奎元店——潮州市奎元实验学校斜对面</div>
+                    <div class="right-title" style="padding-top: 66px">河南省</div>
+                    <div class="right-introduce">开封/御街口店——开封市西大街1号（宋都御街口/大商斜对面）</div>
+                    <div class="right-title" style="padding-top: 115px">福建省</div>
+                    <div class="right-introduce">厦门/集美万达店——厦门市集美区银江路137号集美万达金街56号<br>
+                        泉州/晋江店——晋江市青阳湖光西路东岩苑1幢90-92号</div>
+                    <div class="right-title" style="padding-top: 95px">内蒙古</div>
+                    <div class="right-introduce">集宁/内蒙古集宁店—内蒙古乌兰察布市集宁区奥威购物广场5楼</div>
+                </div>
+                <img src="../images/separateLine.png" height="1283" width="23"/>
+                <div id="left-content">
+                    <div class="left-introduce">重庆/协信星光天地店—重庆市渝中区大坪协信星光天地商场L4-017/018</div>
+                    <img src="../images/thumb.png" height="310" width="440"/>
+                    <div class="left-title" style="padding-top: 38px">山西省</div>
+                    <div class="left-introduce">太原/北美新天地店—太原市长风街长治路口北美新天地4楼F443<br>
+                        太原/美都汇店——太原市小店区康宁街美都汇二层<br>
+                        太原/富百家店——太原市富百家购物中心北门</div>
+                    <div class="left-title" style="padding-top: 130px">江苏省</div>
+                    <div class="left-introduce">常州/常州店——常州市钟楼区莱蒙都会商业街5-106/107号<br>
+                        张家港/购物公园店—张家港市购物公园沃尔玛一楼南门口处</div>
+                    <div class="left-title" style="padding-top: 93px;">湖北省</div>
+                    <div class="left-introduce">武汉/光谷天地店——武汉市东湖高新区关山大道光谷天地029号<br>
+                        赤壁/赤壁店——赤壁市家联超市后门旁右侧</div>
+                    <div class="left-title" style="padding-top: 90px">甘肃省</div>
+                    <div class="left-introduce">兰州/兰州店——兰州市安宁区金牛街（西北师范大学斜对面）</div>
+                    <div class="left-title" style="padding-top: 118px">沙特阿拉伯</div>
+                    <div class="left-introduce">沙特阿拉伯/利雅得——名品街店</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="my-foot">
+        <div id="introduce">
+            <img src="../images/logo.png" style="margin-right: 15px">
+            <div id="introduce-char">
+                重庆耀炎食品有限公司<br>
+                地址：重庆市渝中区龙湖时代天街C馆17栋<br>
+                耀炎食品©版权所有<br>
+            </div>
+        </div>
+        <div id="right-foot">
+            <div class="user-email">
+                <img src="../images/user.png" height="22" width="28">
+                <div class="user-email-char">联系人：陈先生</div>
+            </div>
+            <div class="user-email">
+                <img src="../images/email.png" height="22" width="28"/>
+                <div class="user-email-char">邮箱：info@yaoyanfood.com</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/market.js"></script>
+<script src="../js/mainSlideShow.js"></script>
+</body>
+</html>
+

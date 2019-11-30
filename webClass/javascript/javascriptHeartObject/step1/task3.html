@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证字符串是否全由数字字符组成</title>
+    <script>
+        var qq = "20534123";
+        var result;
+        result = (new RegExp("^[0-9]*$")).test(qq);
+        window.alert("使用正则表达式兑现RegExp检测qq号码是否全部为数字，结果为" + result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

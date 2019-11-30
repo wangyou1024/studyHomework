@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog 函数对象的继承与原型的使用</title>
+    <script>
+        function DogConstructor(name) {
+            this.name = name;
+            this.respondTo = function (name) {
+                if (this.name === name){
+                    alert("Woof");
+                }
+            }
+        }
+        function PuppyDog() {
+        }
+        PuppyDog.prototype = new DogConstructor("puppyDog");
+        PuppyDog.prototype.age = 5;
+        PuppyDog.prototype.toString = function () {
+            document.write(this.name + " " + this.age);
+        };
+        var puppyDog = new PuppyDog();
+        puppyDog.toString();
+        puppyDog.respondTo("puppyDog");
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
